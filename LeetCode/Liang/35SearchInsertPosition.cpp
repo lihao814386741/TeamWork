@@ -1,4 +1,4 @@
-ass Solution {
+class Solution {
 public:
     int searchInsert(vector<int>& nums, int target) {
         int begin = 0, end = nums.size() - 1;
