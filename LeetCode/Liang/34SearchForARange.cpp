@@ -1,10 +1,10 @@
 /**
-It's just like upper_bound and lower_bound [ , )
+ * It's just like upper_bound and lower_bound [ , )
  **/
- 
+
 class Solution {
 public:
-    vector<int> searchRange(vector<int>& nums, int target) 
+    vector<int> searchRange(vector<int>& nums, int target)
     {
         vector<int> result(2, -1);
         int lower = lowerBound(nums, target);
@@ -17,7 +17,8 @@ public:
     }
     
 private:
-    int lowerBound(const vector<int> &nums, int target) 
+    // Find the first element index that is no less than target.
+    int lowerBound(const vector<int> &nums, int target)
     {
         if (nums.empty()) {
             return -1;
@@ -32,11 +33,16 @@ private:
                 begin = mid + 1;
             }
         }
+        
+        // Because of case: [1, 1], 2
+        if (target > nums.at(begin)) {
+            ++begin;
+        }
         return begin;
     }
     
-    
-    int upperBound(const vector<int> &nums, int target) 
+    // Find the first element index that is larget than target.
+    int upperBound(const vector<int> &nums, int target)
     {
         if (nums.empty()) {
             return -1;
@@ -52,7 +58,8 @@ private:
             }
         }
         
-        if (nums.at(begin) == target) {
+        // Because of case: [1, 1], 2
+        if (target == nums.at(begin)) {
             ++begin;
         }
         
