@@ -1,47 +1,58 @@
 public class Solution {
-    
-    private final static int[][] direction = new int[][]{{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
-    
-    private boolean isInBound(int colMax, int rowMax, int x, int y) {
-        return x >= 0 && x < colMax && y >= 0 && y < rowMax;
-    }
+    private List<Integer> ans;
 
+    private void loop(int[][] matrix, int from, int to, int c, boolean inc, boolean isRow) {
+        for (int i = from; inc ? i <= to : i >= to ; i = inc? i+1 : i-1) {
+            if (isRow == true) {
+                ans.add(matrix[c][i]);   
+            } else {
+                ans.add(matrix[i][c]);
+            }
+        }
+    }
+    
     public List<Integer> spiralOrder(int[][] matrix) {
-        List<Integer> ans = new ArrayList<Integer> ();
+        ans = new ArrayList<Integer> ();
         
         if (matrix == null || matrix.length == 0) {
-            return ans;
+            return ans;    
         }
         
-        boolean[][] isVisited = new boolean[matrix.length][matrix[0].length];
-        int d = 0;
-        int x = 0;
-        int y = 0;
-        
-        int length = matrix.length * matrix[0].length;
-        
-        for (int i = 0; i < length; i ++) {
-            ans.add(matrix[x][y]);
+        int rowMin = 0;
+        int rowMax = matrix.length - 1;
+        int colMin = 0;
+        int colMax = matrix[0].length - 1;
+
+        while (rowMin <= rowMax && colMin <= colMax) {
+            loop(matrix, colMin, colMax, rowMin, true, true);
+            rowMin ++;
             
-            for (int j = 0; j < 4; j ++) {
-                int tmpx = x + direction[(d + j) % 4][0];
-                int tmpy = y + direction[(d + j) % 4][1];
-                
-                if (isInBound(matrix.length, matrix[0].length, tmpx, tmpy) && isVisited[tmpx][tmpy] == false) {
-                    isVisited[tmpx][tmpy] = true;
-                    x = tmpx;
-                    y = tmpy;
-                    d = (d + j) % 4;
-                    
-                    break;
-                }
+            if (rowMin > rowMax) {
+                break;
+            }
+            
+            loop(matrix, rowMin, rowMax, colMax, true, false);
+            colMax --;
+            
+            if (colMin > colMax) {
+                break;
+            }
+            
+            loop(matrix, colMax, colMin, rowMax, false, true);
+            rowMax --;
+            
+            if (rowMin > rowMax) {
+                break;
+            }
+            
+            loop(matrix, rowMax, rowMin, colMin, false, false);
+            colMin ++;
+            
+            if (colMin > colMax) {
+                break;
             }
         }
         
-        
         return ans;
-        
-        
-        
     }
 }
