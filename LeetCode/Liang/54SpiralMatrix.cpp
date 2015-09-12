@@ -5,35 +5,40 @@ public:
             return vector<int>();
         }
         
-        int row = matrix.size();
-        int column = matrix.at(0).size();
-        int loop = row <= column ? (row - 1) / 2 : (column - 1) / 2;
+        int rowMin = 0;
+        int rowMax = (int)matrix.size() - 1;
+        int colMin = 0;
+        int colMax = (int)matrix.at(0).size() - 1;
+        
         vector<int> result;
-        for (int k = 0; k <= loop; ++k) {
+        while (rowMin <= rowMax && colMin <= rowMax) {
             // Top
-            for (int j = k; j < column - k; ++j) {
-                result.push_back(matrix.at(k).at(j));
+            for (int j = colMin; j <= colMax; ++j) {
+                result.push_back(matrix.at(rowMin).at(j));
             }
+            ++rowMin;
+            if (rowMin > rowMax) break;
             
             // Right
-            for (int i = k + 1; i < row - k; ++i) {
-                result.push_back(matrix.at(i).at(column - k - 1));
+            for (int i = rowMin; i <= rowMax; ++i) {
+                result.push_back(matrix.at(i).at(colMax));
             }
+            --colMax;
+            if (colMin > colMax) break;
             
             // Bottom: if bottom row is not equal to top row;
-            if (row - k - 1 != k) {
-                for (int j = column - k - 2; j > k; --j) {
-                    result.push_back(matrix.at(row - k - 1).at(j));
-                } 
+            for (int j = colMax; j >= colMin; --j) {
+                result.push_back(matrix.at(rowMax).at(j));
             }
-            
+            --rowMax;
+            if (rowMin > rowMax) break;
             
             // Left: if left column is not equal to right column
-            if (column - k - 1 != k) {
-                for (int i = row - k - 1; i > k; --i) {
-                    result.push_back(matrix.at(i).at(k));
-                }   
+            for (int i = rowMax; i >= rowMin; --i) {
+                result.push_back(matrix.at(i).at(colMin));
             }
+            ++colMin;
+            if (colMin > colMax) break;
         }
         
         return result;
