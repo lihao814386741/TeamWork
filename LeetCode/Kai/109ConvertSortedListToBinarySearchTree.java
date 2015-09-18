@@ -15,6 +15,11 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
+
+
+//O(n*logn)
+//Build from root
+//pre-order
 public class Solution {
     public TreeNode sortedListToBST(ListNode head) {
         if(head==null) return null;
@@ -36,3 +41,40 @@ public class Solution {
     }
     
 }
+
+
+//O(n)
+//build from botton left
+//in-order
+public class Solution {
+    ListNode h;
+    
+    public TreeNode sortedListToBST(ListNode head) {
+        h= head;
+        ListNode node = head;
+        int size = 0;
+        while(node!=null) {
+            node = node.next;
+            size++;
+        }
+        
+        TreeNode root = createBST(0, size-1);
+        return root;
+    }
+    
+    public TreeNode createBST(int left, int right) {
+        if(left>right) return null;
+        
+        int mid = (left+right)/2;
+        TreeNode leftChild = createBST(left, mid-1);
+        TreeNode root = new TreeNode(h.val);
+        h = h.next;
+        TreeNode rightChild = createBST(mid+1, right);
+        
+        root.left = leftChild;
+        root.right = rightChild;
+        
+        return root;
+    }
+}
+
