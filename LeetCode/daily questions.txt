@@ -1,0 +1,7 @@
+9/19/2015
+1. 224 Basic Calculator
+2. 65 Valid Number
+3. 149 Max Points on a Line
+4. 71 Simplify Path
+5. 151 Reverse Words in a String
+
