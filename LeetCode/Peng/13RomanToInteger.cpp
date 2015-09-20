@@ -1,3 +1,25 @@
+//Hash dict version
+class Solution {
+public:
+    int romanToInt(string s) {
+        unordered_map<char, int> dict = {{'I', 1}, {'V', 5}, {'X', 10}, {'L', 50}, {'C', 100}, {'D', 500}, {'M', 1000}};
+        int result = 0;
+        int n = s.size();
+        if (!n) return result;
+        for (int i = 0; i < n - 1; i++) {
+            int temp = dict.at(s.at(i));
+            if (temp < dict.at(s.at(i + 1))) {
+                result -= temp;
+            } else {
+                result += temp;
+            }
+        }
+        result += dict.at(s.at(n - 1));
+        return result;
+    }
+};
+
+//Switch version, a little faster
 class Solution {
 public:
     int romanToInt(string s) {
