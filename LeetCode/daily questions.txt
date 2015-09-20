@@ -5,3 +5,9 @@
 4. 71 Simplify Path
 5. 151 Reverse Words in a String
 
+9/20/2015
+1. 44 Wildcard Matching
+2. 68 Text Justification
+3. 5 Longest Palindromic Substring
+4. 17 Letter Combinations of a Phone Number
+5. 22 Generate Parentheses
