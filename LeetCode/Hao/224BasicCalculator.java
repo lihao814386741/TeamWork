@@ -88,7 +88,7 @@ public class Solution {
             return 1;  
         } else if (s.equals("*")) {  
             return 2;  
-        } else if (s.equals("\\")) {  
+        } else if (s.equals("/")) {  
             return 2;  
         }  
         return 0;  
