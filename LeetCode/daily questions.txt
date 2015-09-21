@@ -1,13 +1,20 @@
-9/19/2015
+19/9/2015
 1. 224 Basic Calculator
 2. 65 Valid Number
 3. 149 Max Points on a Line
 4. 71 Simplify Path
 5. 151 Reverse Words in a String
 
-9/20/2015
+20/9/2015
 1. 44 Wildcard Matching
 2. 68 Text Justification
 3. 5 Longest Palindromic Substring
 4. 17 Letter Combinations of a Phone Number
 5. 22 Generate Parentheses
+
+21/9/2015(Today no hard question so we can have more time to prepare for career fair)
+1. 91	Decode Ways
+2. 227	Basic Calculator II
+3. 240	Search a 2D Matrix II
+4. Kth Smallest Element in a BST
+5. 222	Count Complete Tree Nodes
