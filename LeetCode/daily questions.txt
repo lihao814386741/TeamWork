@@ -16,5 +16,5 @@
 1. 91	Decode Ways
 2. 227	Basic Calculator II
 3. 240	Search a 2D Matrix II
-4. 230 Kth Smallest Element in a BST
+4. 230  Kth Smallest Element in a BST
 5. 222	Count Complete Tree Nodes
