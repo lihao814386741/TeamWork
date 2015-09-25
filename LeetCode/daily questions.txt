@@ -18,3 +18,16 @@
 3. 240	Search a 2D Matrix II
 4. Kth Smallest Element in a BST
 5. 222	Count Complete Tree Nodes
+
+25/9/2015
+1. 93 Restore IP Addresses
+2. 215 Kth Largest Element in an Array
+3. 241 Different Ways to Add Parentheses
+4. 96 Unique Binary Search Trees
+5. 95 Unique Binary Search TreesII
+
+6. 72 Edit Distance
+7. 32 Longest Valid Parentheses
+8. 126 Word Ladder II
+9. 44 Wildcard Matching
+10. 68 Text Justification
