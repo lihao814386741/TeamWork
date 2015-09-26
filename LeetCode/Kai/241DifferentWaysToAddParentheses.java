@@ -1,6 +1,12 @@
 public class Solution {
     public List<Integer> diffWaysToCompute(String input) {
         List<Integer> result = new LinkedList<Integer>();
+        
+        if(input.matches("[0-9]+")) {    //or input.matches("\\d+");
+            result.add(Integer.parseInt(input));   //when input is a num
+            return result;
+        }
+        
         for(int i=0; i<input.length(); i++) {
             char c = input.charAt(i);
             if(c=='+' || c=='-' || c=='*') {
@@ -27,9 +33,7 @@ public class Solution {
                 }
             }
         }
-        if(result.size()==0) {
-            result.add(Integer.parseInt(input));   //when input is a single num
-        }
+        
         return result;
     }
     
