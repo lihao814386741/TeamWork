@@ -31,3 +31,13 @@
 8. 126 Word Ladder II
 9. 44 Wildcard Matching
 10. 68 Text Justification
+
+26/9/2015
+1. 139	Word Break
+2. 23	Merge k Sorted Lists
+3. 4	Median of Two Sorted Arrays
+4. 140	Word Break II
+5. 33	Search in Rotated Sorted Array
+
+6. 218	The Skyline Problem
+7. 282	Expression Add Operators
