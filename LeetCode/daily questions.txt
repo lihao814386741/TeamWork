@@ -28,7 +28,6 @@
 
 6. 72 	Edit Distance
 7. 32 	Longest Valid Parentheses
-8. 44 	Wildcard Matching
 
 26/9/2015
 1. 139	Word Break
@@ -44,8 +43,28 @@
 4. 94	Binary Tree Inorder Traversal
 5. 145	Binary Tree Postorder Traversal
 
-6. 126	Word Ladder II
+6. 221	Maximal Square
+7. 213	House Robber II
+8. 46	Permutations
+9. 47	Permutations II
+
+28/9/2015
+1. 131	Palindrome Partitioning
+2. 89	Gray Code
+3. 77	Combinations
+4. 208	Implement Trie (Prefix Tree)
+5. 211	Add and Search Word - Data structure design
+
+29/9/2015
+1. 133	Clone Graph
+2. 108	Convert Sorted Array to Binary Search Tree
+3. 284	Peeking Iterator
+4. 129	Sum Root to Leaf Numbers
+5. 116	Populating Next Right Pointers in Each Node
+	
+6. 4	Median of Two Sorted Arrays
 7. 68	Text Justification
-8. 4	Median of Two Sorted Arrays
+8. 126	Word Ladder II
 9. 218	The Skyline Problem
 10. 282	Expression Add Operators
+
