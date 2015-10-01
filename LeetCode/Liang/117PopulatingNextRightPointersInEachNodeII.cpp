@@ -25,7 +25,7 @@ public:
             	tail->next = root->right;
             	tail = tail->next;
         	}
-        	root = root->right; // Always forget this.
+        	root = root->next; // Always forget this.
     	}
     
     	root = dummy->next;
