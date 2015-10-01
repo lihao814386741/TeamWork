@@ -1,16 +1,16 @@
 19/9/2015
-1. 224 Basic Calculator
-2. 65 Valid Number
-3. 149 Max Points on a Line
-4. 71 Simplify Path
-5. 151 Reverse Words in a String
+1. 224 	Basic Calculator
+2. 65 	Valid Number
+3. 149 	Max Points on a Line
+4. 71 	Simplify Path
+5. 151 	Reverse Words in a String
 
 20/9/2015
-1. 44 Wildcard Matching
-2. 68 Text Justification
-3. 5 Longest Palindromic Substring
-4. 17 Letter Combinations of a Phone Number
-5. 22 Generate Parentheses
+1. 44 	Wildcard Matching
+2. 68 	Text Justification
+3. 5 	Longest Palindromic Substring
+4. 17 	Letter Combinations of a Phone Number
+5. 22 	Generate Parentheses
 
 21/9/2015(Today no hard question so we can have more time to prepare for career fair)
 1. 91	Decode Ways
@@ -20,14 +20,51 @@
 5. 222	Count Complete Tree Nodes
 
 25/9/2015
-1. 93 Restore IP Addresses
-2. 215 Kth Largest Element in an Array
-3. 241 Different Ways to Add Parentheses
-4. 96 Unique Binary Search Trees
-5. 95 Unique Binary Search TreesII
+1. 93 	Restore IP Addresses
+2. 215 	Kth Largest Element in an Array
+3. 241 	Different Ways to Add Parentheses
+4. 96 	Unique Binary Search Trees
+5. 95 	Unique Binary Search TreesII
 
-6. 72 Edit Distance
-7. 32 Longest Valid Parentheses
-8. 126 Word Ladder II
-9. 44 Wildcard Matching
-10. 68 Text Justification
+6. 72 	Edit Distance
+7. 32 	Longest Valid Parentheses
+
+26/9/2015
+1. 139	Word Break
+2. 23	Merge k Sorted Lists
+3. 140	Word Break II
+4. 33	Search in Rotated Sorted Array
+5. 144	Binary Tree Preorder Traversal
+
+27/9/2015
+1. 137	Single Number II
+2. 260	Single Number III
+3. 235	Lowest Common Ancestor of a Binary Tree
+4. 94	Binary Tree Inorder Traversal
+5. 145	Binary Tree Postorder Traversal
+
+6. 221	Maximal Square
+7. 213	House Robber II
+8. 46	Permutations
+9. 47	Permutations II
+
+28/9/2015
+1. 131	Palindrome Partitioning
+2. 89	Gray Code
+3. 77	Combinations
+4. 208	Implement Trie (Prefix Tree)
+5. 211	Add and Search Word - Data structure design
+
+29/9/2015
+1. 133	Clone Graph
+2. 108	Convert Sorted Array to Binary Search Tree
+3. 129	Sum Root to Leaf Numbers
+4. 116	Populating Next Right Pointers in Each Node
+
+1/10/2015
+1. 284	Peeking Iterator
+2. 4	Median of Two Sorted Arrays
+3. 126	Word Ladder II
+4. 218	The Skyline Problem
+5. 282	Expression Add Operators
+
