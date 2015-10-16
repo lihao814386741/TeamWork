@@ -68,3 +68,11 @@
 4. 218	The Skyline Problem
 5. 282	Expression Add Operators
 
+=================================== Back to normal =========================
+
+16/10/2015
+1. 282	Expression Add Operators
+2. 214	Shortest Palindrome
+3. 188	Best Time to Buy and Sell Stock IV
+4. 30	Substring with Concatenation of All Words
+5. 239	Sliding Window Maximum
