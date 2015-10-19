@@ -91,3 +91,7 @@
 4. 41	First Missing Positive
 5. 84	Largest Rectangle in Histogram
 
+19/10/2015
+1. 56	Merge Intervals
+2. 99	Recover Binary Search Tree
+3. 25	Reverse Nodes in k-Group
