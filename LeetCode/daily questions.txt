@@ -91,3 +91,7 @@
 4. 41	First Missing Positive
 5. 84	Largest Rectangle in Histogram
 
+27/10/2015
+1. 220	Contains Duplicate III
+2. 179	Largest Number
+3. 220	Contains Duplicate III
