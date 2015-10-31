@@ -95,3 +95,10 @@
 1. 220	Contains Duplicate III
 2. 179	Largest Number
 3. 98	Validate Binary Search Tree
+
+31/10/2015
+1. 51	N-Queens
+2. 52	N-Queens II
+3. 115	Distinct Subsequences
+4. 207	Course Schedule
+5. 210	Course Schedule II
