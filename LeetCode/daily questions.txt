@@ -102,3 +102,6 @@
 3. 115	Distinct Subsequences
 4. 207	Course Schedule
 5. 210	Course Schedule II
+
+15/11/2015
+1. 287	Find the Duplicate Number
